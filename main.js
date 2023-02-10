@@ -12,10 +12,10 @@ function book(title, author, pages, read) {
 }
 
 //Individual book
-const book1 = new book("kong", "sinoi", 244, true);
+const booklet = new book("kong", "sinoi", 244, true);
 
 //Add button
 addBtn.addEventListener("click", () => {
-  myLibrary.push(book1);
+  myLibrary.push(booklet);
   console.log(myLibrary);
 });
