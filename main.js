@@ -1,4 +1,7 @@
 const addBtn = document.querySelector(".add-btn");
+const libraryContainer = document.querySelector(".library-container");
+const box = document.createElement("div");
+box.classList.add("card");
 
 //Store all books here
 let myLibrary = [];
@@ -14,8 +17,5 @@ function book(title, author, pages, read) {
 //Individual book
 const booklet = new book("kong", "sinoi", 244, true);
 
-//Add button
-addBtn.addEventListener("click", () => {
-  myLibrary.push(booklet);
-  console.log(myLibrary);
-});
+//Get input Value
+addBtn.addEventListener("submit", additem);
