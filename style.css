@@ -37,6 +37,17 @@ header button {
 
 /* MAIN CONTENT */
 .main-container {
-  height: 85vh;
+  height: auto;
   background-color: var(--main-color-light);
+}
+
+.library-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  height: 450px;
+  background-color: rgb(160, 160, 160);
 }
