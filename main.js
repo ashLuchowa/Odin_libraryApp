@@ -1,5 +1,6 @@
 const addBtn = document.querySelector(".add-btn");
 const closeBtn = document.querySelector("#form-close");
+const submitBtn = document.querySelector("#submit-btn");
 const libraryContainer = document.querySelector(".library-container");
 const mainForm = document.querySelector(".main-form");
 const box = document.createElement("div");
@@ -16,8 +17,10 @@ function book(title, author, pages, read) {
   this.read = read;
 }
 
-//Individual book
-const booklet = new book("kong", "sinoi", 244, true);
+//Submit Book
+submitBtn.addEventListener("submit", addBookToLibrary);
+
+// const booklet = new book("kong", "sinoi", 244, true);
 
 //Get input Value
 addBtn.addEventListener("click", () => {
