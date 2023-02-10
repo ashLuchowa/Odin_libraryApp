@@ -7,7 +7,20 @@ const box = document.createElement("div");
 box.classList.add("card");
 
 //Store all books here
-let myLibrary = [];
+let myLibrary = [
+  {
+    title: "Kong",
+    author: "Tolkien",
+    pages: 122,
+    read: true,
+  },
+  {
+    title: "Megaman",
+    author: "Nouni",
+    pages: 212,
+    read: false,
+  },
+];
 
 //Constructor
 function book(title, author, pages, read) {
@@ -18,9 +31,13 @@ function book(title, author, pages, read) {
 }
 
 //Submit Book
-submitBtn.addEventListener("submit", addBookToLibrary);
+submitBtn.addEventListener("click", addBookToLibrary);
 
-// const booklet = new book("kong", "sinoi", 244, true);
+function addBookToLibrary(e) {
+  e.preventDefault();
+  myLibrary.push(new book("lola", "Zack", 132, true));
+  console.log(myLibrary);
+}
 
 //Get input Value
 addBtn.addEventListener("click", () => {
