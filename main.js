@@ -1,4 +1,5 @@
 const addBtn = document.querySelector(".add-btn");
+const closeBtn = document.querySelector("#form-close");
 const libraryContainer = document.querySelector(".library-container");
 const mainForm = document.querySelector(".main-form");
 const box = document.createElement("div");
@@ -21,4 +22,8 @@ const booklet = new book("kong", "sinoi", 244, true);
 //Get input Value
 addBtn.addEventListener("click", () => {
   mainForm.style.visibility = "visible";
+});
+
+closeBtn.addEventListener("click", () => {
+  mainForm.style.visibility = "hidden";
 });
