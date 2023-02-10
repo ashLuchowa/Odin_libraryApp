@@ -1,5 +1,6 @@
 const addBtn = document.querySelector(".add-btn");
 const libraryContainer = document.querySelector(".library-container");
+const mainForm = document.querySelector(".main-form");
 const box = document.createElement("div");
 box.classList.add("card");
 
@@ -18,4 +19,6 @@ function book(title, author, pages, read) {
 const booklet = new book("kong", "sinoi", 244, true);
 
 //Get input Value
-addBtn.addEventListener("submit", additem);
+addBtn.addEventListener("click", () => {
+  mainForm.style.visibility = "visible";
+});
