@@ -37,7 +37,7 @@ header button {
 
 /* MAIN CONTENT */
 .main-container {
-  height: auto;
+  height: 85vh;
   background-color: var(--main-color-light);
 }
 
@@ -50,4 +50,21 @@ header button {
 .card {
   height: 450px;
   background-color: rgb(160, 160, 160);
+}
+
+/* FORM */
+.form-container {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 30px;
+  gap: 10px;
+  border-radius: 10px;
 }
