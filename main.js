@@ -18,14 +18,15 @@ function book(title, author, pages, read) {
 //Submit Book
 submitBtn.addEventListener("click", addBookToLibrary);
 
+//Input form info
 function addBookToLibrary(e) {
   e.preventDefault();
-  myLibrary.push(new book("lola", "Zack", 132, true));
+  myLibrary.push(new book(title.value, author.value, pages.value, read.value));
   console.table(myLibrary);
   createBox();
 }
 
-//Get input Value
+//Display input Value
 addBtn.addEventListener("click", () => {
   mainForm.style.visibility = "visible";
 });
