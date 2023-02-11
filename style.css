@@ -8,7 +8,10 @@
 
 :root {
   --main-color: #000000;
-  --main-color-light: rgb(224, 224, 224);
+  --main-color-light: rgb(228, 228, 228);
+  --text-color-main: #f2f2f2;
+  --text-color-sub: #333333;
+  --main-color-3: #3facf5;
 }
 
 /* HEADER */
@@ -50,7 +53,7 @@ header button {
 }
 
 .card {
-  background-color: rgb(160, 160, 160);
+  background-color: rgb(255, 255, 255);
 }
 
 /* FORM */
