@@ -51,9 +51,9 @@ function createBox() {
 //Add book info
 function addBookInfo(item) {
   const bookTitle = document.createElement("h1");
-  const bookAuthor = document.createElement("h1");
-  const bookPages = document.createElement("h1");
-  const bookRead = document.createElement("h1");
+  const bookAuthor = document.createElement("p");
+  const bookPages = document.createElement("p");
+  const bookRead = document.createElement("p");
   const bookImage = document.createElement("img");
 
   item.append(bookImage);
@@ -61,6 +61,7 @@ function addBookInfo(item) {
   item.append(bookAuthor);
   item.append(bookPages);
   item.append(bookRead);
+  item.classList.add("paraGap");
 
   for (let i = 0; i < myLibrary.length; i++) {
     bookTitle.textContent = `Title: ${myLibrary[i].title}`;
@@ -69,5 +70,6 @@ function addBookInfo(item) {
     bookRead.textContent = `Read: ${myLibrary[i].read}`;
     bookImage.setAttribute("src", "./img/trending001.png");
     bookImage.classList.add("titleImage");
+    bookTitle.classList.add("bookTitle");
   }
 }
