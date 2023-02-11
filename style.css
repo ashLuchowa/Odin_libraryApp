@@ -32,11 +32,17 @@ header h1 {
 }
 
 header button {
-  padding: 25px 70px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 25px;
+  border-radius: 50px;
   cursor: pointer;
   border: none;
-  background-color: var(--main-color-light);
-  z-index: 100;
+  background-color: var(--text-color-sub);
+  color: var(--text-color-main);
+  z-index: 10;
+  font-size: 50px;
 }
 
 /* MAIN CONTENT */
