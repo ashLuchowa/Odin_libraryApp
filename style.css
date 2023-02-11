@@ -54,9 +54,16 @@ header button {
 
 .card {
   background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border-right: 10px solid #00d800;
+  box-shadow: 2px 4px 5px #d4d4d4;
 }
 
 /* FORM */
+.main-container {
+  padding: 20px;
+}
+
 .form-container {
   position: fixed;
   top: 15vh;
@@ -91,6 +98,5 @@ header button {
 
 /* Book Title Image */
 .titleImage {
-  border-radius: 20px;
-  height: 200px;
+  width: 175px;
 }
