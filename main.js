@@ -1,6 +1,5 @@
 const addBtn = document.querySelector(".add-btn");
 const closeBtn = document.querySelector("#form-close");
-const submitBtn = document.querySelector("#submit-btn");
 const libraryContainer = document.querySelector(".library-container");
 const mainForm = document.querySelector(".main-form");
 
