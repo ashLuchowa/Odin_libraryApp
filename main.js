@@ -48,6 +48,11 @@ closeBtn.addEventListener("click", () => {
 
 //Loop through array
 for (let i = 0; i < myLibrary.length; i++) {
+  createBox();
+}
+
+//create a new box
+function createBox() {
   const box = document.createElement("div");
   box.classList.add("card");
   libraryContainer.append(box);
