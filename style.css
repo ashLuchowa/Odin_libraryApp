@@ -33,10 +33,12 @@ header button {
   cursor: pointer;
   border: none;
   background-color: var(--main-color-light);
+  z-index: 100;
 }
 
 /* MAIN CONTENT */
 .main-container {
+  position: relative;
   height: 85vh;
   background-color: var(--main-color-light);
 }
@@ -54,6 +56,9 @@ header button {
 
 /* FORM */
 .form-container {
+  position: fixed;
+  top: 15vh;
+  right: 38vw;
   height: 85vh;
   display: flex;
   align-items: center;
