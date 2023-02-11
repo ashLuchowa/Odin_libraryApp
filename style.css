@@ -39,7 +39,7 @@ header button {
 /* MAIN CONTENT */
 .main-container {
   position: relative;
-  height: 85vh;
+  min-height: 85vh;
   background-color: var(--main-color-light);
 }
 
