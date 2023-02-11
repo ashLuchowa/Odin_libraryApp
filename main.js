@@ -16,11 +16,11 @@ function book(title, author, pages, read) {
 }
 
 //Submit Book
-submitBtn.addEventListener("click", addBookToLibrary);
+mainForm.addEventListener("submit", addBookToLibrary);
 
 //Input form info
-function addBookToLibrary(e) {
-  e.preventDefault();
+function addBookToLibrary(event) {
+  event.preventDefault();
   myLibrary.push(new book(title.value, author.value, pages.value, read.value));
   console.table(myLibrary);
   createBox();
