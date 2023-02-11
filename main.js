@@ -57,6 +57,8 @@ function createBox() {
   const box = document.createElement("div");
   box.classList.add("card");
   libraryContainer.append(box);
-}
 
-console.table(myLibrary);
+  for (let i = 0; i < myLibrary.length; i++) {
+    box.textContent = `Title: ${myLibrary[i].title}`;
+  }
+}
