@@ -5,20 +5,7 @@ const libraryContainer = document.querySelector(".library-container");
 const mainForm = document.querySelector(".main-form");
 
 //Store all books here
-let myLibrary = [
-  {
-    title: "Kong",
-    author: "Tolkien",
-    pages: 122,
-    read: true,
-  },
-  {
-    title: "Megaman",
-    author: "Nouni",
-    pages: 212,
-    read: false,
-  },
-];
+let myLibrary = [];
 
 //Constructor
 function book(title, author, pages, read) {
@@ -58,7 +45,24 @@ function createBox() {
   box.classList.add("card");
   libraryContainer.append(box);
 
+  const bookTitle = document.createElement("h1");
+  const bookAuthor = document.createElement("h1");
+  const bookPages = document.createElement("h1");
+  const bookRead = document.createElement("h1");
+  box.append(bookTitle);
+  box.append(bookAuthor);
+  box.append(bookPages);
+  box.append(bookRead);
+
   for (let i = 0; i < myLibrary.length; i++) {
-    box.textContent = `Title: ${myLibrary[i].title}`;
+    bookTitle.textContent = `Title: ${myLibrary[i].title}`;
+    bookAuthor.textContent = `Author: ${myLibrary[i].author}`;
+    bookPages.textContent = `Pages: ${myLibrary[i].pages}`;
+    bookRead.textContent = `Read: ${myLibrary[i].read}`;
   }
 }
+
+//Add book info
+// function addBookInfo() {
+
+// }
