@@ -45,12 +45,11 @@ header button {
 
 .library-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 20px;
 }
 
 .card {
-  height: 450px;
   background-color: rgb(160, 160, 160);
 }
 
