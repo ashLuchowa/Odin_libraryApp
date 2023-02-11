@@ -3,8 +3,6 @@ const closeBtn = document.querySelector("#form-close");
 const submitBtn = document.querySelector("#submit-btn");
 const libraryContainer = document.querySelector(".library-container");
 const mainForm = document.querySelector(".main-form");
-const box = document.createElement("div");
-box.classList.add("card");
 
 //Store all books here
 let myLibrary = [
@@ -36,7 +34,7 @@ submitBtn.addEventListener("click", addBookToLibrary);
 function addBookToLibrary(e) {
   e.preventDefault();
   myLibrary.push(new book("lola", "Zack", 132, true));
-  console.log(myLibrary);
+  console.table(myLibrary);
 }
 
 //Get input Value
@@ -47,3 +45,12 @@ addBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   mainForm.style.visibility = "hidden";
 });
+
+//Loop through array
+for (let i = 0; i < myLibrary.length; i++) {
+  const box = document.createElement("div");
+  box.classList.add("card");
+  libraryContainer.append(box);
+}
+
+console.table(myLibrary);
