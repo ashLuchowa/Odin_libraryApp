@@ -86,3 +86,9 @@ header button {
   color: var(--main-color);
   padding: 0px 5px;
 }
+
+/* Book Title Image */
+.titleImage {
+  border-radius: 20px;
+  height: 200px;
+}

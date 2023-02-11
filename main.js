@@ -2,6 +2,7 @@ const addBtn = document.querySelector(".add-btn");
 const closeBtn = document.querySelector("#form-close");
 const libraryContainer = document.querySelector(".library-container");
 const mainForm = document.querySelector(".main-form");
+const bookImage = document.getElementById("chooseImage");
 
 //Store all books here
 let myLibrary = [];
@@ -53,6 +54,9 @@ function addBookInfo(item) {
   const bookAuthor = document.createElement("h1");
   const bookPages = document.createElement("h1");
   const bookRead = document.createElement("h1");
+  const bookImage = document.createElement("img");
+
+  item.append(bookImage);
   item.append(bookTitle);
   item.append(bookAuthor);
   item.append(bookPages);
@@ -63,5 +67,7 @@ function addBookInfo(item) {
     bookAuthor.textContent = `Author: ${myLibrary[i].author}`;
     bookPages.textContent = `Pages: ${myLibrary[i].pages}`;
     bookRead.textContent = `Read: ${myLibrary[i].read}`;
+    bookImage.setAttribute("src", "./img/trending001.png");
+    bookImage.classList.add("titleImage");
   }
 }
