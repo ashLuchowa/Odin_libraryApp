@@ -35,6 +35,7 @@ function addBookToLibrary(e) {
   e.preventDefault();
   myLibrary.push(new book("lola", "Zack", 132, true));
   console.table(myLibrary);
+  createBox();
 }
 
 //Get input Value
