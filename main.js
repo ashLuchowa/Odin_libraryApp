@@ -55,12 +55,14 @@ function addBookInfo(item) {
   const bookPages = document.createElement("p");
   const bookRead = document.createElement("p");
   const bookImage = document.createElement("img");
+  const delCard = document.createElement("span");
 
   item.append(bookImage);
   item.append(bookTitle);
   item.append(bookAuthor);
   item.append(bookPages);
   item.append(bookRead);
+  item.append(delCard);
   item.classList.add("paraGap");
 
   for (let i = 0; i < myLibrary.length; i++) {
@@ -71,5 +73,7 @@ function addBookInfo(item) {
     bookImage.setAttribute("src", "./img/trending001.png");
     bookImage.classList.add("titleImage");
     bookTitle.classList.add("bookTitle");
+    delCard.textContent = "X";
+    delCard.classList.add("cardClose");
   }
 }

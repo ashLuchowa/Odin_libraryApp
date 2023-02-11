@@ -22,7 +22,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 100px;
+  padding: 0px 20px;
 }
 
 header h1 {
@@ -53,6 +53,7 @@ header button {
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,6 +78,7 @@ header button {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 3;
 }
 
 .main-form {
@@ -113,4 +115,14 @@ header button {
 
 .paraGap {
   line-height: 1.2;
+}
+
+.cardClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  color: var(--main-color);
+  cursor: pointer;
+  font-weight: bold;
 }
