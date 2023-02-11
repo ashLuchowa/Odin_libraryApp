@@ -44,15 +44,19 @@ function createBox() {
   const box = document.createElement("div");
   box.classList.add("card");
   libraryContainer.append(box);
+  addBookInfo(box);
+}
 
+//Add book info
+function addBookInfo(item) {
   const bookTitle = document.createElement("h1");
   const bookAuthor = document.createElement("h1");
   const bookPages = document.createElement("h1");
   const bookRead = document.createElement("h1");
-  box.append(bookTitle);
-  box.append(bookAuthor);
-  box.append(bookPages);
-  box.append(bookRead);
+  item.append(bookTitle);
+  item.append(bookAuthor);
+  item.append(bookPages);
+  item.append(bookRead);
 
   for (let i = 0; i < myLibrary.length; i++) {
     bookTitle.textContent = `Title: ${myLibrary[i].title}`;
@@ -61,8 +65,3 @@ function createBox() {
     bookRead.textContent = `Read: ${myLibrary[i].read}`;
   }
 }
-
-//Add book info
-// function addBookInfo() {
-
-// }
