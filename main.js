@@ -54,16 +54,22 @@ function addBookInfo(item) {
   const bookAuthor = document.createElement("p");
   const bookPages = document.createElement("p");
   const bookRead = document.createElement("p");
-  const bookImage = document.createElement("img");
   const delCard = document.createElement("span");
+  const bookImage = document.createElement("img");
 
-  item.append(bookImage);
-  item.append(bookTitle);
-  item.append(bookAuthor);
-  item.append(bookPages);
-  item.append(bookRead);
-  item.append(delCard);
-  item.classList.add("paraGap");
+  //card divs
+  const leftCardDiv = document.createElement("div");
+  const rightCardDiv = document.createElement("div");
+  item.append(leftCardDiv);
+  item.append(rightCardDiv);
+
+  leftCardDiv.appendChild(bookImage);
+  rightCardDiv.append(bookTitle);
+  rightCardDiv.append(bookAuthor);
+  rightCardDiv.append(bookPages);
+  rightCardDiv.append(bookRead);
+  rightCardDiv.append(delCard);
+  rightCardDiv.classList.add("paraGap");
 
   for (let i = 0; i < myLibrary.length; i++) {
     bookTitle.textContent = `Title: ${myLibrary[i].title}`;
