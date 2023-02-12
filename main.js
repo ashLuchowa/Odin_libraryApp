@@ -83,3 +83,15 @@ function addBookInfo(item) {
     delCard.classList.add("cardClose");
   }
 }
+
+//Remove Book
+libraryContainer.addEventListener("click", removeBook);
+
+function removeBook(e) {
+  if (e.target.classList.contains("cardClose")) {
+    if (confirm("Are you sure?")) {
+      const removeCard = e.target;
+      removeCard.parentElement.parentElement.remove();
+    }
+  }
+}
