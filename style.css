@@ -54,14 +54,14 @@ header button {
 
 .library-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   gap: 20px;
 }
 
 .card {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 5fr;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   border-right: 10px solid #00d800;

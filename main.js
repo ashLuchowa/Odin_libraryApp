@@ -5,7 +5,14 @@ const mainForm = document.querySelector(".main-form");
 const bookImage = document.getElementById("chooseImage");
 
 //Store all books here
-let myLibrary = [];
+let myLibrary = [
+  {
+    title: "The Intelligent Investor",
+    author: "Benjamin Graham",
+    pages: 623,
+    read: "No",
+  },
+];
 
 //Constructor
 function book(title, author, pages, read) {
