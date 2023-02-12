@@ -79,7 +79,7 @@ function addBookInfo(item) {
   rightCardDiv.classList.add("paraGap");
 
   for (let i = 0; i < myLibrary.length; i++) {
-    bookTitle.textContent = `Title: ${myLibrary[i].title}`;
+    bookTitle.textContent = `${myLibrary[i].title}`;
     bookAuthor.textContent = `Author: ${myLibrary[i].author}`;
     bookPages.textContent = `Pages: ${myLibrary[i].pages}`;
     bookRead.textContent = `Read: ${myLibrary[i].read}`;
