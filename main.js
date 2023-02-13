@@ -10,7 +10,7 @@ let myLibrary = [
     title: "The Intelligent Investor",
     author: "Benjamin Graham",
     pages: 623,
-    read: "No",
+    read: "Yes",
   },
 ];
 
@@ -88,6 +88,14 @@ function addBookInfo(item) {
     bookTitle.classList.add("bookTitle");
     delCard.textContent = "X";
     delCard.classList.add("cardClose");
+  }
+
+  //change Border Color
+  for (let i = 0; i < myLibrary.length; i++) {
+    const result = bookRead.textContent.split(":");
+    if (result[1].includes("Not yet")) {
+      item.classList.add("borderColor");
+    }
   }
 }
 

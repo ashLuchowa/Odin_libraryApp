@@ -64,7 +64,7 @@ header button {
   grid-template-columns: 1fr 5fr;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
-  border-right: 10px solid #00d800;
+  border-right: 10px solid var(--main-color-3);
   box-shadow: 2px 4px 5px #d4d4d4;
   padding: 20px;
 }
@@ -129,4 +129,8 @@ header button {
   color: var(--main-color);
   cursor: pointer;
   font-weight: bold;
+}
+
+.borderColor {
+  border-right: 10px solid rgb(173, 173, 173);
 }
