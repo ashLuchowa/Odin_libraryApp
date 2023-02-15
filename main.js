@@ -33,6 +33,7 @@ function addBookToLibrary(event) {
   console.table(myLibrary);
   createBox();
   mainForm.reset();
+  mainForm.style.display = "none";
 }
 
 //Display input Value
