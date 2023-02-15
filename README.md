@@ -8,3 +8,4 @@ Odin's Project Library App to practice object constructors
 - [x] Reset and hide form after submit
 - [ ] Ability to upload specific image
 - [x] Max length for text input
+- [ ] Read Yes or No toggle
