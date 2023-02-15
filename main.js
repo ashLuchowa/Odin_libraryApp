@@ -2,6 +2,7 @@ const addBtn = document.querySelector(".add-btn");
 const closeBtn = document.querySelector("#form-close");
 const libraryContainer = document.querySelector(".library-container");
 const mainForm = document.querySelector(".main-form");
+const formTitle = document.querySelector("#title");
 const bookImage = document.getElementById("chooseImage");
 
 //Store all books here
@@ -31,9 +32,7 @@ function addBookToLibrary(event) {
   myLibrary.push(new book(title.value, author.value, pages.value, read.value));
   console.table(myLibrary);
   createBox();
-
-  //Reset form
-  //
+  mainForm.reset();
 }
 
 //Display input Value
@@ -113,5 +112,3 @@ function removeBook(e) {
     }
   }
 }
-
-console.log(mainForm);
