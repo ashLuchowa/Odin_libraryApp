@@ -31,15 +31,18 @@ function addBookToLibrary(event) {
   myLibrary.push(new book(title.value, author.value, pages.value, read.value));
   console.table(myLibrary);
   createBox();
+
+  //Reset form
+  //
 }
 
 //Display input Value
 addBtn.addEventListener("click", () => {
-  mainForm.style.visibility = "visible";
+  mainForm.style.display = "flex";
 });
 
 closeBtn.addEventListener("click", () => {
-  mainForm.style.visibility = "hidden";
+  mainForm.style.display = "none";
 });
 
 //Loop through array
@@ -110,3 +113,5 @@ function removeBook(e) {
     }
   }
 }
+
+console.log(mainForm);
