@@ -7,4 +7,4 @@ Odin's Project Library App to practice object constructors
 - [x] Fix z-index bug
 - [x] Reset and hide form after submit
 - [ ] Ability to upload specific image
-- [ ] Max length for text input
+- [x] Max length for text input
